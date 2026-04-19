@@ -1,0 +1,217 @@
+﻿<!doctype html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEON ECHO - Tous les articles</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6b21a8',
+            neoncyan: '#22d3ee',
+            neonmagenta: '#ec4899',
+            neonlime: '#bef575',
+            darkbg: '#0a061f'
+          },
+          fontFamily: {
+            display: ['Orbitron', 'sans-serif'],
+            body: ['Sora', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <style>
+    body { background: #070019; color: #f8fafc; font-family: 'Sora', sans-serif; }
+
+    .nav-color-cycle {
+      transition: color 0.35s ease;
+    }
+  </style>
+</head>
+
+<body class="bg-darkbg text-slate-100 font-body min-h-screen">
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-white/10 backdrop-blur-md">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6 lg:px-8" aria-label="Navigation principale">
+      <a href="Accueil.html" class="flex items-center gap-3">
+        <i class="fa-solid fa-music text-2xl text-neoncyan sm:text-3xl" aria-hidden="true"></i>
+        <span class="text-2xl font-bold tracking-tight sm:text-3xl bg-gradient-to-r from-neoncyan to-neonmagenta bg-clip-text text-transparent">NEON ECHO</span>
+      </a>
+      <ul class="flex items-center gap-3 text-sm font-medium sm:gap-8 sm:text-base">
+        <li><a href="Accueil.html" class="nav-color-cycle text-white transition hover:text-neoncyan">Accueil</a></li>
+        <li><a href="Liste.html" class="nav-color-cycle font-semibold text-neonmagenta transition hover:text-neoncyan">Liste</a></li>
+        <li><a href="Article.html" class="nav-color-cycle text-white transition hover:text-neoncyan">Detail</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="max-w-7xl mx-auto px-6 py-12">
+      <h1 class="text-5xl font-bold text-center mb-4">ARTICLES</h1>
+      <p class="text-center text-slate-400 mb-12">6 artistes qui representent la musique moderne</p>
+
+      <div class="flex flex-wrap gap-3 justify-center mb-12">
+        <button class="px-6 py-2.5 rounded-3xl border border-white/30 hover:bg-neonmagenta hover:text-white transition">Tous</button>
+        <button class="px-6 py-2.5 rounded-3xl border border-white/30 hover:bg-neoncyan hover:text-black transition">Pop</button>
+        <button class="px-6 py-2.5 rounded-3xl border border-white/30 hover:bg-neonlime hover:text-black transition">Hip-Hop</button>
+        <button class="px-6 py-2.5 rounded-3xl border border-white/30 hover:bg-neonmagenta hover:text-white transition">R&amp;B</button>
+        <button class="px-6 py-2.5 rounded-3xl border border-white/30 hover:bg-neoncyan hover:text-black transition">Afrobeats</button>
+        <button class="px-6 py-2.5 rounded-3xl border border-white/30 hover:bg-neonlime hover:text-black transition">Reggaeton</button>
+        <button class="px-6 py-2.5 rounded-3xl border border-white/30 hover:bg-neonmagenta hover:text-white transition">K-Pop</button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <a href="Article.html" class="bg-neutral-900 rounded-3xl overflow-hidden hover:-translate-y-1 transition group">
+          <img src="40CF335C-1A98-496B-8179-52156D644992.jpeg" alt="Billie Eilish" class="w-full h-80 object-cover" />
+          <div class="p-6">
+            <span class="text-xs bg-neonmagenta/20 text-neonmagenta px-4 py-1 rounded-full group-hover:bg-neonmagenta group-hover:text-white transition">POP</span>
+            <h3 class="text-2xl font-semibold mt-4">Billie Eilish</h3>
+            <p class="text-slate-400 mt-2 text-sm line-clamp-3">La voix whisper qui a change la pop moderne.</p>
+            <button class="mt-6 w-full py-3 rounded-3xl border border-neonmagenta text-neonmagenta font-medium hover:bg-neonmagenta hover:text-white transition">
+              Lire l'article ->
+            </button>
+          </div>
+        </a>
+
+        <a href="Article.html" class="bg-neutral-900 rounded-3xl overflow-hidden hover:-translate-y-1 transition group">
+          <img src="E60B1AC5-2BB2-4342-B5C9-8DEC63AC2EF1.jpeg" alt="Travis Scott" class="w-full h-80 object-cover" />
+          <div class="p-6">
+            <span class="text-xs bg-neonlime/20 text-neonlime px-4 py-1 rounded-full group-hover:bg-neonlime group-hover:text-black transition">HIP-HOP / RAP</span>
+            <h3 class="text-2xl font-semibold mt-4">Travis Scott</h3>
+            <p class="text-slate-400 mt-2 text-sm line-clamp-3">Le roi du trap futuriste.</p>
+            <button class="mt-6 w-full py-3 rounded-3xl border border-neonlime text-neonlime font-medium hover:bg-neonlime hover:text-black transition">
+              Lire l'article ->
+            </button>
+          </div>
+        </a>
+
+        <a href="Article.html" class="bg-neutral-900 rounded-3xl overflow-hidden hover:-translate-y-1 transition group">
+          <img src="441E6528-FC7F-4D7A-B61E-2E713FF3FEEB.jpeg" alt="The Weeknd" class="w-full h-80 object-cover" />
+          <div class="p-6">
+            <span class="text-xs bg-neoncyan/20 text-neoncyan px-4 py-1 rounded-full group-hover:bg-neoncyan group-hover:text-black transition">R&amp;B</span>
+            <h3 class="text-2xl font-semibold mt-4">The Weeknd</h3>
+            <p class="text-slate-400 mt-2 text-sm line-clamp-3">Le maitre du R&amp;B cinematographique.</p>
+            <button class="mt-6 w-full py-3 rounded-3xl border border-neoncyan text-neoncyan font-medium hover:bg-neoncyan hover:text-black transition">
+              Lire l'article ->
+            </button>
+          </div>
+        </a>
+
+        <a href="Article.html" class="bg-neutral-900 rounded-3xl overflow-hidden hover:-translate-y-1 transition group">
+          <img src="F07C766E-FCA1-4989-9008-D7D848EBCF7C.jpeg" alt="Wizkid" class="w-full h-80 object-cover" />
+          <div class="p-6">
+            <span class="text-xs bg-neonmagenta/20 text-neonmagenta px-4 py-1 rounded-full group-hover:bg-neonmagenta group-hover:text-white transition">AFROBEATS</span>
+            <h3 class="text-2xl font-semibold mt-4">Wizkid</h3>
+            <p class="text-slate-400 mt-2 text-sm line-clamp-3">La superstar de l'Afrobeats.</p>
+            <button class="mt-6 w-full py-3 rounded-3xl border border-neonmagenta text-neonmagenta font-medium hover:bg-neonmagenta hover:text-white transition">
+              Lire l'article ->
+            </button>
+          </div>
+        </a>
+
+        <a href="Article.html" class="bg-neutral-900 rounded-3xl overflow-hidden hover:-translate-y-1 transition group">
+          <img src="1887B44B-7F1C-4C05-8DE3-9F73177E187D.jpeg" alt="Bad Bunny" class="w-full h-80 object-cover" />
+          <div class="p-6">
+            <span class="text-xs bg-neonlime/20 text-neonlime px-4 py-1 rounded-full group-hover:bg-neonlime group-hover:text-black transition">REGGAETON</span>
+            <h3 class="text-2xl font-semibold mt-4">Bad Bunny</h3>
+            <p class="text-slate-400 mt-2 text-sm line-clamp-3">Le phenomene du reggaeton mondial.</p>
+            <button class="mt-6 w-full py-3 rounded-3xl border border-neonlime text-neonlime font-medium hover:bg-neonlime hover:text-black transition">
+              Lire l'article ->
+            </button>
+          </div>
+        </a>
+
+        <a href="Article.html" class="bg-neutral-900 rounded-3xl overflow-hidden hover:-translate-y-1 transition group">
+          <img src="B23C0867-2C04-46D3-BDB3-222F8EF37EAA.jpeg" alt="BTS" class="w-full h-80 object-cover" />
+          <div class="p-6">
+            <span class="text-xs bg-neoncyan/20 text-neoncyan px-4 py-1 rounded-full group-hover:bg-neoncyan group-hover:text-black transition">K-POP</span>
+            <h3 class="text-2xl font-semibold mt-4">BTS</h3>
+            <p class="text-slate-400 mt-2 text-sm line-clamp-3">Le groupe qui a revolutionne la K-Pop.</p>
+            <button class="mt-6 w-full py-3 rounded-3xl border border-neoncyan text-neoncyan font-medium hover:bg-neoncyan hover:text-black transition">
+              Lire l'article ->
+            </button>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="fixed bottom-6 right-6 bg-neutral-900 border border-white/20 rounded-3xl p-5 w-72 shadow-xl">
+      <div class="flex items-center gap-3 mb-3">
+        <i class="fa-solid fa-music text-neoncyan"></i>
+        <p class="font-medium">PLONGEZ VOUS DANS L'UNIVERS</p>
+      </div>
+      <audio controls>
+        <source src="Kendrick Lamar, SZA - All The Stars (Instrumental & Background Vocals).mp3" type="audio/MP3" />
+        Votre navigateur ne supporte pas l'audio.
+      </audio>
+      <p class="text-xs text-slate-400 text-center mt-2">Clique sur Play pour ecouter l'ambiance</p>
+    </div>
+  </main>
+
+  <footer class="border-t border-white/10 bg-white/10 backdrop-blur-md mt-16">
+    <div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
+      <div>
+        <a href="Accueil.html" class="flex items-center gap-3">
+          <i class="fa-solid fa-music text-2xl text-neoncyan" aria-hidden="true"></i>
+          <span class="font-display text-2xl font-bold tracking-tight bg-gradient-to-r from-neoncyan to-neonmagenta bg-clip-text text-transparent">NEON ECHO</span>
+        </a>
+        <p class="mt-3 text-sm text-slate-300">Univers musical moderne: artistes, genres et culture en mode neon.</p>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wide text-slate-200">Navigation</h4>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="Accueil.html" class="hover:text-neoncyan">Accueil</a></li>
+          <li><a href="Liste.html" class="hover:text-neoncyan">Liste d'articles</a></li>
+          <li><a href="Article.html" class="hover:text-neoncyan">Detail d'un article</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wide text-slate-200">Ressources</h4>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><a href="#" class="hover:text-neoncyan">Mentions legales</a></li>
+          <li><a href="#" class="hover:text-neoncyan">Politique de confidentialite</a></li>
+          <li><a href="#" class="hover:text-neoncyan">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wide text-slate-200">Contact</h4>
+        <p class="mt-3 text-sm text-slate-300">contact@neon-echo.site</p>
+        <p class="mt-1 text-sm text-slate-300">Casablanca, Maroc</p>
+      </div>
+    </div>
+    <div class="border-t border-white/10 py-4 text-center text-xs text-slate-400">
+      © 2026 NEON ECHO
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const links = document.querySelectorAll('.nav-color-cycle');
+      const palette = ['text-neoncyan', 'text-neonmagenta', 'text-neonlime', 'text-white'];
+      let step = 0;
+
+      setInterval(() => {
+        links.forEach((link, index) => {
+          palette.forEach((color) => link.classList.remove(color));
+          const color = palette[(step + index) % palette.length];
+          link.classList.add(color);
+        });
+        step = (step + 1) % palette.length;
+      }, 1400);
+    })();
+  </script>
+</body>
+</html>
